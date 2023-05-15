@@ -1,0 +1,4 @@
+build_from:
+  aarch64: ghcr.io/yourok/torrserver:matrix.123@sha256:dea52d1c9bed3cb70c489b084900a3ec22ff58525380795ffd96c504c7ab1d95
+  amd64: ghcr.io/yourok/torrserver:matrix.123@sha256:7723d81576feb2da7b8a74bcc2472164601333c53396da9997fef5cf30c850c3
+  armv7: ghcr.io/yourok/torrserver:matrix.123@sha256:d03e9f3424789b9612cdef80aaad58bb831640e06832a060d0e0e0e4eb8011dc
