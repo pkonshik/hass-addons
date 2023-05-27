@@ -13,8 +13,8 @@ startup: application
 advanced: false
 boot: manual
 map:
-  - share
-  - media
+  - share:rw
+  - media:rw
   - config:rw
   - ssl
 options:

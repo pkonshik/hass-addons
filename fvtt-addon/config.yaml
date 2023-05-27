@@ -1,0 +1,33 @@
+name: FVTT-server
+version: 1.0.0
+slug: fvtt-server
+description: Integration of FVTT server for home-assistant
+url: https://github.com/pkonshik/fvtt-server-hass-addon
+codenotary: pkonshik@gmail.com
+webui: https://[HOST]:[PORT:30000]
+init: false
+arch:
+  - aarch64
+startup: application
+advanced: false
+boot: manual
+map:
+  - share:rw
+  - media:rw
+  - ssl
+environment:
+  FOUNDRY_DATA_DIR: /media/BoardGame/data
+  CONTAINER_CACHE: /media/BoardGame/ContainerCache
+  FOUNDRY_SSL_CERT: /ssl/FoundryVTT.crt
+  FOUNDRY_SSL_KEY: /ssl/FoundryVTT.pem
+ports:
+  30000/tcp: 30000
+ports_description:
+  30000/tcp: FVTT server port
+image: "pkonshik/fvtt-server-hass-addon-{arch}"
+ingress: true
+ingress_port: 30000
+ingress_stream: true
+host_network: true
+panel_title: FVTT-server
+panel_icon: mdi:dice-d20

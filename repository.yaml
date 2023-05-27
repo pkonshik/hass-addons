@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: TorrServer-hass-addon
-url: 'https://github.com/pkonshik/TorrServer-hass-addon'
+name: hass-addons by pkonshik
+url: 'https://github.com/pkonshik/hass-addons'
 maintainer: Awesome Maintainer <prosh.konshik@gmail.com>
