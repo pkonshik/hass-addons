@@ -1,0 +1,38 @@
+name: TorrServer
+version: 1.0.0
+slug: torr-server
+description: Integration of TorrServer for home-assistant
+url: https://github.com/pkonshik/TorrServer-hass-addon
+codenotary: pkonshik@gmail.com
+webui: http://[HOST]:[PORT:8090]
+watchdog: http://[HOST]:[PORT:8090]/echo
+init: false
+arch:
+  - aarch64
+boot: manual
+map:
+  - share:rw
+  - media:rw
+  - config:rw
+  - ssl
+options:
+  ssl: true
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+schema:
+  certfile: str
+  keyfile: str
+  ssl: bool
+environment:
+  TS_DIR: "/data/torrserver"
+  TS_CONF_PATH: "/data/torrserver/config"
+  TS_LOG_PATH: "/data/torrserver/log"
+  TS_TORR_DIR: "/data/torrserver/torrents"
+ports:
+  8090/tcp: 8090
+ports_description:
+  8090/tcp: TorrServer port
+image: "pkonshik/torrserver-hass-addon-{arch}"
+host_network: true
+panel_title: TorrServer
+panel_icon: mdi:play-network
