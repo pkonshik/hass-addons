@@ -22,7 +22,7 @@ ports:
   30000/tcp: 30000
 ports_description:
   30000/tcp: FVTT server port
-image: "ghcr.io/pkonshik/hass-addons/fvtt/{arch}"
+image: "ghcr.io/pkonshik/hass-addon-fvtt-{arch}"
 host_network: true
 panel_title: FVTT-server
 panel_icon: mdi:dice-d20
