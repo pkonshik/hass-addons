@@ -1,5 +1,5 @@
 name: FVTT-server
-version: 1.0.0
+version: 1.0.1
 slug: fvtt-server
 description: Integration of FVTT server for home assistant
 url: https://github.com/pkonshik/hass-addons/fvtt
@@ -14,6 +14,7 @@ map:
   - media:rw
   - ssl
 environment:
+  CONTAINER_PRESERVE_CONFIG: true
   FOUNDRY_DATA_DIR: /media/BoardGame/data
   CONTAINER_CACHE: /media/BoardGame/ContainerCache
   FOUNDRY_SSL_CERT: /ssl/FoundryVTT.crt
