@@ -1,2 +1,9 @@
 build_from:
-  aarch64: ghcr.io/yourok/torrserver:matrix.123
+  aarch64: ghcr.io/yourok/torrserver:matrix.124
+  amd64: ghcr.io/yourok/torrserver:matrix.124
+  armv7: ghcr.io/yourok/torrserver:matrix.124
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: TorrServer"
+  org.opencontainers.image.description: "Add-on to run TorrServer on hass os."
+  org.opencontainers.image.source: "https://github.com/pkonshik/hass-addons/torrserver"
+  org.opencontainers.image.licenses: "MIT License"

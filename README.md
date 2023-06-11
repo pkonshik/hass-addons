@@ -5,6 +5,8 @@ This repository contains the following add-ons
 ### [Torr server](torrserver/README.md)
 
 ![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports arm/v7 Architecture][arm/v7-shield]
 
 Launch torrserve on hassos
 
@@ -33,3 +35,5 @@ Notes to developers after forking or using the github template feature:
  -->
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-not--tested-orange.svg
+[arm/v7-shield]: https://img.shields.io/badge/arm%2Fv7-not--tested-orange.svg

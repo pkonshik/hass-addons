@@ -1,5 +1,5 @@
 name: TorrServer
-version: 1.0.0
+version: 1.0.1
 slug: torr-server
 description: Integration of TorrServer for home assistant
 url: https://github.com/pkonshik/hass-addons/torrserver
@@ -8,6 +8,8 @@ webui: http://[HOST]:[PORT:8090]
 init: false
 arch:
   - aarch64
+  - amd64
+  - arm/v7
 boot: manual
 map:
   - share:rw
