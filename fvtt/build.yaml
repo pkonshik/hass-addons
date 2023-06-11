@@ -5,4 +5,3 @@ labels:
   org.opencontainers.image.description: "Add-on to run fvtt on hass os."
   org.opencontainers.image.source: "https://github.com/pkonshik/hass-addons/fvtt"
   org.opencontainers.image.licenses: "MIT License"
-
