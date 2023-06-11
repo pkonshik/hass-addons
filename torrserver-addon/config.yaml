@@ -33,7 +33,6 @@ ports:
 ports_description:
   8090/tcp: TorrServer port
 image: "pkonshik/torrserver-hass-addon-{arch}"
-ingress: false
 host_network: true
 panel_title: TorrServer
 panel_icon: mdi:play-network
