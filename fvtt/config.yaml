@@ -1,8 +1,8 @@
 name: FVTT-server
 version: 1.0.0
 slug: fvtt-server
-description: Integration of FVTT server for home-assistant
-url: https://github.com/pkonshik/fvtt-server-hass-addon
+description: Integration of FVTT server for home assistant
+url: https://github.com/pkonshik/hass-addons/fvtt
 codenotary: pkonshik@gmail.com
 webui: https://[HOST]:[PORT:30000]
 init: false

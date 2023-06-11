@@ -2,13 +2,13 @@
 
 This repository contains the following add-ons
 
-### [Torr server](./torrserver-addon/README.md)
+### [Torr server](torrserver/README.md)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 
 Launch torrserve on hassos
 
-### [FVTT server addon](./fvtt-addon/README.md)
+### [FVTT server addon](fvtt/README.md)
 ![Supports aarch64 Architecture][aarch64-shield]
 
 Launch FVTT on hassos
