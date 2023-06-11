@@ -23,5 +23,4 @@ LABEL \
     io.hass.name="${BUILD_NAME}" \
     io.hass.description="${BUILD_DESCRIPTION}"
 
-#CMD /docker-entrypoint.sh
 HEALTHCHECK CMD curl http://localhost:8090/echo
