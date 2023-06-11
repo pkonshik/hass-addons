@@ -8,8 +8,6 @@ webui: https://[HOST]:[PORT:30000]
 init: false
 arch:
   - aarch64
-startup: application
-advanced: false
 boot: manual
 map:
   - share:rw
@@ -25,9 +23,7 @@ ports:
 ports_description:
   30000/tcp: FVTT server port
 image: "pkonshik/fvtt-server-hass-addon-{arch}"
-ingress: true
-ingress_port: 30000
-ingress_stream: true
+ingress: false
 host_network: true
 panel_title: FVTT-server
 panel_icon: mdi:dice-d20

@@ -9,8 +9,6 @@ watchdog: http://[HOST]:[PORT:8090]/echo
 init: false
 arch:
   - aarch64
-startup: application
-advanced: false
 boot: manual
 map:
   - share:rw
@@ -35,9 +33,7 @@ ports:
 ports_description:
   8090/tcp: TorrServer port
 image: "pkonshik/torrserver-hass-addon-{arch}"
-ingress: true
-ingress_port: 8090
-ingress_stream: true
+ingress: false
 host_network: true
 panel_title: TorrServer
 panel_icon: mdi:play-network

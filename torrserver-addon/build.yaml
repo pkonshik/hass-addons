@@ -1,2 +1,2 @@
 build_from:
-  aarch64: ghcr.io/yourok/torrserver:matrix.123@sha256:dea52d1c9bed3cb70c489b084900a3ec22ff58525380795ffd96c504c7ab1d95
+  aarch64: ghcr.io/yourok/torrserver:matrix.123
