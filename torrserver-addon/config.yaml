@@ -5,7 +5,6 @@ description: Integration of TorrServer for home-assistant
 url: https://github.com/pkonshik/TorrServer-hass-addon
 codenotary: pkonshik@gmail.com
 webui: http://[HOST]:[PORT:8090]
-watchdog: http://[HOST]:[PORT:8090]/echo
 init: false
 arch:
   - aarch64
