@@ -10,7 +10,7 @@ ARG BUILD_REF
 ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
-VOLUME ["/share", "/ssl", "/data", "/media"]
+VOLUME ["/share", "/ssl", "/media"]
 
 # Labels
 LABEL \

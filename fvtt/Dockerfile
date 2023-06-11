@@ -10,7 +10,6 @@ ARG BUILD_REF
 ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
-#ENV CONTAINER_DATA_PATH=/media/BoardGame
 VOLUME ["/share", "/ssl", "/media"]
 
 # Labels
