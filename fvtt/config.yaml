@@ -1,4 +1,4 @@
-name: FVTT-server
+name: FVTT
 version: 1.0.1
 slug: fvtt-server
 description: Integration of FVTT server for home assistant
@@ -25,5 +25,5 @@ ports_description:
   30000/tcp: FVTT server port
 image: "ghcr.io/pkonshik/hass-addon-fvtt-{arch}"
 host_network: true
-panel_title: FVTT-server
+panel_title: FVTT
 panel_icon: mdi:dice-d20
