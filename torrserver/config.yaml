@@ -32,7 +32,7 @@ ports:
   8090/tcp: 8090
 ports_description:
   8090/tcp: TorrServer port
-image: "pkonshik/torrserver-hass-addon-{arch}"
+image: "ghcr.io/pkonshik/hass-addons/torrserver/{arch}"
 host_network: true
 panel_title: TorrServer
 panel_icon: mdi:play-network
