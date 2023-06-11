@@ -14,7 +14,7 @@ map:
   - media:rw
   - ssl
 environment:
-  CONTAINER_PRESERVE_CONFIG: true
+  CONTAINER_PRESERVE_CONFIG: "true"
   FOUNDRY_DATA_DIR: /media/BoardGame/data
   CONTAINER_CACHE: /media/BoardGame/ContainerCache
   FOUNDRY_SSL_CERT: /ssl/FoundryVTT.crt
