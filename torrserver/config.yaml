@@ -9,7 +9,7 @@ init: false
 arch:
   - aarch64
   - amd64
-  - arm/v7
+  - armv7
 boot: manual
 map:
   - share:rw
