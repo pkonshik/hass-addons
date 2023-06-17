@@ -1,7 +1,6 @@
 build_from:
   aarch64: felddy/foundryvtt:release-11.301.0
   amd64: felddy/foundryvtt:release-11.301.0
-  #aarch64: pkonshik/foundryvtt:release
 args:
   BASHIO_VERSION: 0.15.0
 labels:
