@@ -1,5 +1,5 @@
 name: FVTT
-version: 1.0.2
+version: 1.0.3
 slug: fvtt-server
 description: Integration of FVTT server for home assistant
 url: https://github.com/pkonshik/hass-addons
@@ -21,6 +21,7 @@ options:
   container_preserve_config: true
   foundry_vtt_data_path: "/media/BoardGame/data"
   container_cache: "/media/BoardGame/ContainerCache"
+  foundry_version: "11.301"
 schema:
   certfile: str
   keyfile: str
@@ -29,6 +30,7 @@ schema:
   container_preserve_config: bool
   foundry_vtt_data_path: str
   container_cache: str
+  foundry_version: str
 ports:
   30000/tcp: 30000
 ports_description:
