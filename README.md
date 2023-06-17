@@ -12,6 +12,7 @@ Launch torrserve on hassos
 
 ### [FVTT server addon](fvtt/README.md)
 ![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
 
 Launch FVTT on hassos
 
@@ -35,5 +36,5 @@ Notes to developers after forking or using the github template feature:
  -->
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[amd64-shield]: https://img.shields.io/badge/amd64-not--tested-orange.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-not--tested-orange.svg

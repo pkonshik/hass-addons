@@ -1,5 +1,5 @@
 name: FVTT
-version: 1.0.1
+version: 1.0.2
 slug: fvtt-server
 description: Integration of FVTT server for home assistant
 url: https://github.com/pkonshik/hass-addons
@@ -8,22 +8,32 @@ webui: https://[HOST]:[PORT:30000]
 init: false
 arch:
   - aarch64
+  - amd64
 boot: manual
 map:
   - share:rw
   - media:rw
   - ssl
-environment:
-  CONTAINER_PRESERVE_CONFIG: "true"
-  FOUNDRY_DATA_DIR: /media/BoardGame/data
-  CONTAINER_CACHE: /media/BoardGame/ContainerCache
-  FOUNDRY_SSL_CERT: /ssl/FoundryVTT.crt
-  FOUNDRY_SSL_KEY: /ssl/FoundryVTT.pem
+options:
+  certfile: "/ssl/FoundryVTT.crt"
+  keyfile: "/ssl/FoundryVTT.pem"
+  ssl: true
+  container_preserve_config: true
+  foundry_vtt_data_path: "/media/BoardGame/data"
+  container_cache: "/media/BoardGame/ContainerCache"
+schema:
+  certfile: str
+  keyfile: str
+  ssl: bool
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  container_preserve_config: bool
+  foundry_vtt_data_path: str
+  container_cache: str
 ports:
   30000/tcp: 30000
 ports_description:
   30000/tcp: FVTT server port
-image: "ghcr.io/pkonshik/hass-addon-fvtt-{arch}"
+image: "pkonshik/hass-addon-fvtt-{arch}"
 host_network: true
 panel_title: FVTT
 panel_icon: mdi:dice-d20
